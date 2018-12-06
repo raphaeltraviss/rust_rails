@@ -1,0 +1,2 @@
+module RustNumberHelper
+end
