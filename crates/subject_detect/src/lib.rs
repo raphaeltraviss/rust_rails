@@ -2,9 +2,9 @@
 extern crate helix;
 
 ruby! {
-    class SubjectDetect {
-        def hello() {
-            println!("Hello from subject_detect!");
-        }
+  class SubjectDetect {
+    def get_number() -> i32 {
+      422342
     }
+  }
 }
