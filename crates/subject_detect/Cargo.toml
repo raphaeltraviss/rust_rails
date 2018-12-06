@@ -7,3 +7,5 @@ crate-type = ["cdylib"]
 
 [dependencies]
 helix = "0.7.5"
+imageproc = "0.17.0"
+image = "0.20.0"
