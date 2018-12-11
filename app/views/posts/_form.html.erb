@@ -12,8 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :image_data %>
-    <%= form.text_area :image_data, id: :post_image_data %>
+    <% if post.image.present? %>
+      <%= image_tag post.image_url %>
+    <% end %>
+    <%= form.label :image %>
+    <%= form.hidden_field :image, value: post.cached_image_data %>
+    <%= form.file_field :image %>
   </div>
 
   <div class="field">

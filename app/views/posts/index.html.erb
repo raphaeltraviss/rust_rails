@@ -15,7 +15,9 @@
   <tbody>
     <% @posts.each do |post| %>
       <tr>
-        <td><%= post.image_data %></td>
+        <% if post.image.present? %>
+          <td><%= image_tag post.image_url %></td>
+        <% end %>
         <td><%= post.title %></td>
         <td><%= post.body %></td>
         <td><%= link_to 'Show', post %></td>
