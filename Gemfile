@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'helix-rails', '~> 0.5.0'
+gem 'shrine', '~> 2.12'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
