@@ -41,9 +41,9 @@ Look at the directory in rust_rails/crates/subject_detect.  It contains an image
 
 ## What is this actually supposed to do?
 
-![edge image, from base image](https://github.com/raphaeltraviss/rust_rails/blob/master/crates/subject_detect/test_stock/squares_edges.jpeg "Intermediate image showing the edges detected in the base image")
+![edge image, from base image](https://github.com/raphaeltraviss/rust_rails/blob/master/crates/subject_detect/test_stock/squares_edges.png "Intermediate image showing the edges detected in the base image")
 
-![lined image, from edge image](https://github.com/raphaeltraviss/rust_rails/blob/master/crates/subject_detect/test_stock/squares_edges_lines.jpeg "The final lined image, used to get the line count")
+![lined image, from edge image](https://github.com/raphaeltraviss/rust_rails/blob/master/crates/subject_detect/test_stock/squares_edges_lines.png "The final lined image, used to get the line count")
 
 The finished tutorial will have Posts that you can attach images to.  When you upload an image, a native Helix extension will immediately begin processing the image: no intermediate files needed.  Since this all happens in-process, you can use the computation as a validation.  Everything is handled in Rust, so there are other opportunities to use threading.  Later, we can come full-circle, and break the extension out into an out-of-process "thread pool" executable, that is a lot more efficient than spinning up several ImageMagick processes.  Who knows, we might even measure things.
 
